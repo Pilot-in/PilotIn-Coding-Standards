@@ -17,6 +17,8 @@ PHP Coding Standards of Pilot'in
 - Set the default standard as **PilotIn** using:
 
 `phpcs --config-set default_standard PilotIn`
-- Restart your terminal to be sure everything is up to date & try this to see if everything is set:
+- Restart your terminal to be sure everything is up to date & try this command to see if everything is set:
 
-`phpcs --config-show` 
+`phpcs -i` 
+
+*(You should have **"PilotIn"** showing)*
