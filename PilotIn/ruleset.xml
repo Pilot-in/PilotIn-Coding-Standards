@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<ruleset name="PilotIn">
+
+	<description>Pilot'In Coding Standards</description>
+
+    <!-- To customize WordPress properties: -->
+    <!-- https://github.com/WordPress/WordPress-Coding-Standards/wiki/Customizable-sniff-properties#custom-word-delimiters-in-hook-names -->
+
+    <!-- WordPress ruleset -->
+    <rule ref="WordPress">
+        <!-- Disable Yoda conditions check as an example. -->
+        <exclude name="WordPress.PHP.YodaConditions" />
+    </rule>
+
+    <!-- Add extra words delimiter for hook names -->
+    <rule ref="WordPress.NamingConventions.ValidHookName">
+        <properties>
+            <property name="additionalWordDelimiters" value="-/."/>
+        </properties>
+    </rule>
+
+    <!-- WordPress-Docs ruleset -->
+    <!-- https://github.com/WordPress/WordPress-Coding-Standards/blob/develop/WordPress-Docs/ruleset.xml -->
+	<rule ref="WordPress-Docs">
+
+        <!-- Allow "Commented out code" -->
+        <exclude name="Squiz.PHP.CommentedOutCode"/>
+
+        <!-- Allow "Missing comments" -->
+        <exclude name="Squiz.Commenting.InlineComment"/>
+        <exclude name="Squiz.Commenting.FileComment"/>
+        <exclude name="Squiz.Commenting.FunctionComment"/>
+
+        <!-- Allow "Space indent" -->
+        <exclude name="Generic.WhiteSpace.DisallowSpaceIndent" />
+
+    </rule>
+
+    <!-- WordPress-Extra ruleset -->
+    <!-- https://github.com/WordPress/WordPress-Coding-Standards/blob/develop/WordPress-Extra/ruleset.xml -->
+	<rule ref="WordPress-Extra">
+
+		<!-- Prevent duplicate messages + deprecation notice from deprecated sniff. -->
+		<exclude name="WordPress.WP.TimezoneChange.timezone_change_date_default_timezone_set"/>
+		<exclude name="WordPress.WP.TimezoneChange.DeprecatedSniff"/>
+
+	</rule>
+
+</ruleset>
