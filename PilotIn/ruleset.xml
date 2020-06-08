@@ -45,5 +45,9 @@
 		<exclude name="WordPress.WP.TimezoneChange.DeprecatedSniff"/>
 
 	</rule>
+	
+        <!-- Excludes folders -->
+        <exclude-pattern>*/node_modules/*</exclude-pattern>
+	<exclude-pattern>*/vendor/*</exclude-pattern>
 
 </ruleset>
