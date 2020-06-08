@@ -19,6 +19,8 @@ PHP Coding Standards of Pilot'in
 - Copy the paths after **"installed_paths:"**
 - Paste it somewhere and **append the path of your folder** containing the **"PilotIn"** folder with a **comma**
 
+*For reference, mine looks like this: `C:\composer\vendor/phpcompatibility/php-compatibility,C:\composer\vendor/phpcompatibility/phpcompatibility-paragonie,C:\composer\vendor/phpcompatibility/phpcompatibility-wp,C:\composer\vendor/wp-coding-standards/wpcs,C:\Users\Administrateur\Documents\PLUGINS DEV\PilotIn-Coding-Standards\PilotIn`*
+
 - Give the new paths to **phpcs** using this command & change `your/paths/goes/here`:
 
 `phpcs --config-set installed_paths your/paths/goes/here`
