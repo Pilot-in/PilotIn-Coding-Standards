@@ -59,6 +59,9 @@
         <!-- Prevent messages about escaping every values -->
 		<exclude name="WordPress.Security.EscapeOutput"/>
 
+        <!-- Disable forcing of closing PHP tag on a new line -->
+		<exclude name="Squiz.PHP.EmbeddedPhp.ContentBeforeEnd"/>
+
 	</rule>
 
     <!-- Show sniff codes in all reports -->
