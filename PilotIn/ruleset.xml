@@ -44,10 +44,16 @@
 		<exclude name="WordPress.WP.TimezoneChange.timezone_change_date_default_timezone_set"/>
 		<exclude name="WordPress.WP.TimezoneChange.DeprecatedSniff"/>
 
+        <!-- Prevent messages about escaping every values -->
+		<exclude name="WordPress.Security.EscapeOutput"/>
+
 	</rule>
-	
-        <!-- Excludes folders -->
-        <exclude-pattern>*/node_modules/*</exclude-pattern>
+
+    <!-- Show sniff codes in all reports -->
+	<arg value="s"/>
+
+    <!-- Excludes folders -->
+    <exclude-pattern>*/node_modules/*</exclude-pattern>
 	<exclude-pattern>*/vendor/*</exclude-pattern>
 
 </ruleset>
