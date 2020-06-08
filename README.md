@@ -24,6 +24,9 @@ PHP Coding Standards of Pilot'in
 - Give the new paths to **phpcs** using this command & change `your/paths/goes/here`:
 
 `phpcs --config-set installed_paths your/paths/goes/here`
+
+*Example: `phpcs --config-set installed_paths C:\composer\vendor/phpcompatibility/php-compatibility,C:\composer\vendor/phpcompatibility/phpcompatibility-paragonie,C:\composer\vendor/phpcompatibility/phpcompatibility-wp,C:\composer\vendor/wp-coding-standards/wpcs,C:\Users\Administrateur\Documents\PLUGINS DEV\PilotIn-Coding-Standards\PilotIn`*
+
 - Set the default standard as **PilotIn** using:
 
 `phpcs --config-set default_standard PilotIn`
