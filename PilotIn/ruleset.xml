@@ -15,6 +15,9 @@
         <!-- Disable this rule so we can use "Generic.Formatting.SpaceAfterNot" rule -->
         <exclude name="WordPress.WhiteSpace.OperatorSpacing.NoSpaceAfter" />
 
+        <!-- Allow back space indent -->
+        <exclude name="Generic.WhiteSpace.DisallowSpaceIndent" />
+
     </rule>
 
     <!-- Prevent space after not "!" -->
@@ -23,6 +26,17 @@
             <property name="spacing" value="0" />
         </properties>
     </rule>
+
+    <!-- Force space indent configuration -->
+    <rule ref="Generic.WhiteSpace.ScopeIndent">
+        <properties>
+            <property name="indent" value="4"/>
+            <property name="tabIndent" value="false"/>
+        </properties>
+    </rule>
+
+    <!-- Disable Tab indent -->
+    <rule ref="Generic.WhiteSpace.DisallowTabIndent" />
 
     <!-- Add extra words delimiter for hook names -->
     <rule ref="WordPress.NamingConventions.ValidHookName">
