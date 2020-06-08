@@ -3,7 +3,9 @@ PHP Coding Standards of Pilot'in
 
 ## Installation steps
 
-- Having `composer` installed: [Get Composer](https://getcomposer.org/download/)
+- Having `composer` installed:
+
+[Get Composer](https://getcomposer.org/download/)
 - Having `PHP Code Sniffer` installed:
 
 `composer global require "squizlabs/php_codesniffer=*"`
