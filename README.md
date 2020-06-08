@@ -11,9 +11,14 @@ PHP Coding Standards of Pilot'in
 
 `composer global require dealerdirect/phpcodesniffer-composer-installer phpcompatibility/phpcompatibility-wp squizlabs/php_codesniffer wp-coding-standards/wpcs`
 - Download the folder **PilotIn** of this repo and put it somewhere on your drive.
-- Give the path of this folder to phpcs using:
+- Get the current path config of **phpcs** using: 
+`phpcs --config-show`
+- Copy the paths after **"installed_paths:"**
+- Paste it somewhere and **append the path of your folder** containing the **"PilotIn"** folder with a **comma**
 
-`phpcs --config-set installed_paths path/of/your/folder`
+- Give the new paths to **phpcs** using this command & change `your/paths/goes/here`:
+
+`phpcs --config-set installed_paths your/paths/goes/here`
 - Set the default standard as **PilotIn** using:
 
 `phpcs --config-set default_standard PilotIn`
