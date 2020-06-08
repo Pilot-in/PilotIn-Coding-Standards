@@ -34,4 +34,4 @@ PHP Coding Standards of Pilot'in
 
 `phpcs -i` 
 
-*(You should have **"PilotIn"** showing)*
+*(You should have **"PilotIn"** showing & you're good to go 🚀)*
