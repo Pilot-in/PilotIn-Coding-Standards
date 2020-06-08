@@ -8,8 +8,20 @@
 
     <!-- WordPress ruleset -->
     <rule ref="WordPress">
+
         <!-- Disable Yoda conditions check as an example. -->
         <exclude name="WordPress.PHP.YodaConditions" />
+
+        <!-- Disable this rule so we can use "Generic.Formatting.SpaceAfterNot" rule -->
+        <exclude name="WordPress.WhiteSpace.OperatorSpacing.NoSpaceAfter" />
+
+    </rule>
+
+    <!-- Prevent space after not "!" -->
+    <rule ref="Generic.Formatting.SpaceAfterNot">
+        <properties>
+            <property name="spacing" value="0" />
+        </properties>
     </rule>
 
     <!-- Add extra words delimiter for hook names -->
