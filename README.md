@@ -1,6 +1,8 @@
 # PilotIn-Coding-Standards
 PHP Coding Standards of Pilot'in
 
+- [Good coding habits](https://gist.github.com/damien-pilot-in/157b0b3bd6f28832ed257d6ea1ab26bc)
+
 ## Installation steps
 
 - Having `composer` installed:
