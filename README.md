@@ -14,7 +14,7 @@ PHP Coding Standards of Pilot'in
 - Having `WordPress Coding Standards` installed:
 
 `composer global require dealerdirect/phpcodesniffer-composer-installer phpcompatibility/phpcompatibility-wp squizlabs/php_codesniffer wp-coding-standards/wpcs`
-- Download this repo and put it somewhere on your drive.
+- **Clone this repo** somewhere on your drive *(or you can just download this repo and unzip it but it's not going to be synced / updated)*
 - Get the current path config of **phpcs** using: 
 
 `phpcs --config-show`
@@ -22,6 +22,8 @@ PHP Coding Standards of Pilot'in
 - Paste it somewhere and **append the path of your folder** containing the **"PilotIn"** folder with a **comma**
 
 *For reference, mine looks like this: `C:\composer\vendor/phpcompatibility/php-compatibility,C:\composer\vendor/phpcompatibility/phpcompatibility-paragonie,C:\composer\vendor/phpcompatibility/phpcompatibility-wp,C:\composer\vendor/wp-coding-standards/wpcs,C:\Users\Administrateur\Documents\PLUGINS DEV\PilotIn-Coding-Standards\PilotIn`*
+
+*⚠️ If you have relative paths, replace them by *absolute* paths!*
 
 - Give the new paths to **phpcs** using this command & change `your/paths/goes/here`:
 
