@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <ruleset name="PilotIn">
 
-	<description>Pilot'In Coding Standards</description>
+    <description>Pilot'In Coding Standards</description>
 
     <!-- To customize WordPress properties: -->
     <!-- https://github.com/WordPress/WordPress-Coding-Standards/wiki/Customizable-sniff-properties#custom-word-delimiters-in-hook-names -->
@@ -10,20 +10,23 @@
     <rule ref="WordPress">
 
         <!-- Disable Yoda conditions check as an example. -->
-        <exclude name="WordPress.PHP.YodaConditions" />
+        <exclude name="WordPress.PHP.YodaConditions"/>
 
         <!-- Disable this rule so we can use "Generic.Formatting.SpaceAfterNot" rule -->
-        <exclude name="WordPress.WhiteSpace.OperatorSpacing.NoSpaceAfter" />
+        <exclude name="WordPress.WhiteSpace.OperatorSpacing.NoSpaceAfter"/>
 
         <!-- Allow back space indent -->
-        <exclude name="Generic.WhiteSpace.DisallowSpaceIndent" />
+        <exclude name="Generic.WhiteSpace.DisallowSpaceIndent"/>
+
+        <!-- Allow custom file name -->
+        <exclude name="WordPress.Files.FileName.NotHyphenatedLowercase" />
 
     </rule>
 
     <!-- Prevent space after not "!" -->
     <rule ref="Generic.Formatting.SpaceAfterNot">
         <properties>
-            <property name="spacing" value="0" />
+            <property name="spacing" value="0"/>
         </properties>
     </rule>
 
@@ -36,7 +39,7 @@
     </rule>
 
     <!-- Disable Tab indent -->
-    <rule ref="Generic.WhiteSpace.DisallowTabIndent" />
+    <rule ref="Generic.WhiteSpace.DisallowTabIndent"/>
 
     <!-- Add extra words delimiter for hook names -->
     <rule ref="WordPress.NamingConventions.ValidHookName">
@@ -47,7 +50,7 @@
 
     <!-- WordPress-Docs ruleset -->
     <!-- https://github.com/WordPress/WordPress-Coding-Standards/blob/develop/WordPress-Docs/ruleset.xml -->
-	<rule ref="WordPress-Docs">
+    <rule ref="WordPress-Docs">
 
         <!-- Allow "Commented out code" -->
         <exclude name="Squiz.PHP.CommentedOutCode"/>
@@ -58,31 +61,34 @@
         <exclude name="Squiz.Commenting.FunctionComment"/>
 
         <!-- Allow "Space indent" -->
-        <exclude name="Generic.WhiteSpace.DisallowSpaceIndent" />
+        <exclude name="Generic.WhiteSpace.DisallowSpaceIndent"/>
+
+        <!-- Allow custom file name -->
+        <exclude name="WordPress.Files.FileName.NotHyphenatedLowercase"/>
 
     </rule>
 
     <!-- WordPress-Extra ruleset -->
     <!-- https://github.com/WordPress/WordPress-Coding-Standards/blob/develop/WordPress-Extra/ruleset.xml -->
-	<rule ref="WordPress-Extra">
+    <rule ref="WordPress-Extra">
 
-		<!-- Prevent duplicate messages + deprecation notice from deprecated sniff. -->
-		<exclude name="WordPress.WP.TimezoneChange.timezone_change_date_default_timezone_set"/>
-		<exclude name="WordPress.WP.TimezoneChange.DeprecatedSniff"/>
+        <!-- Prevent duplicate messages + deprecation notice from deprecated sniff. -->
+        <exclude name="WordPress.WP.TimezoneChange.timezone_change_date_default_timezone_set"/>
+        <exclude name="WordPress.WP.TimezoneChange.DeprecatedSniff"/>
 
         <!-- Prevent messages about escaping every values -->
-		<exclude name="WordPress.Security.EscapeOutput"/>
+        <exclude name="WordPress.Security.EscapeOutput"/>
 
         <!-- Disable forcing of closing PHP tag on a new line -->
-		<exclude name="Squiz.PHP.EmbeddedPhp.ContentBeforeEnd"/>
+        <exclude name="Squiz.PHP.EmbeddedPhp.ContentBeforeEnd"/>
 
-	</rule>
+    </rule>
 
     <!-- Show sniff codes in all reports -->
-	<arg value="s"/>
+    <arg value="s"/>
 
     <!-- Excludes folders -->
     <exclude-pattern>*/node_modules/*</exclude-pattern>
-	<exclude-pattern>*/vendor/*</exclude-pattern>
+    <exclude-pattern>*/vendor/*</exclude-pattern>
 
 </ruleset>
