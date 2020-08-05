@@ -3,6 +3,9 @@
 
     <description>Pilot'In Coding Standards</description>
 
+    <!-- Look only for those files extensions (php,js,css...) -->
+    <arg name="extensions" value="php"/>
+
     <!-- To customize WordPress properties: -->
     <!-- https://github.com/WordPress/WordPress-Coding-Standards/wiki/Customizable-sniff-properties#custom-word-delimiters-in-hook-names -->
 
@@ -31,8 +34,6 @@
             </property>
         </properties>
     </rule>
-
-
 
     <!-- Prevent space after not "!" -->
     <rule ref="Generic.Formatting.SpaceAfterNot">
