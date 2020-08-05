@@ -23,6 +23,15 @@
 
     </rule>
 
+    <!-- Allow Meta & Tax Query -->
+    <rule ref="WordPress.DB.SlowDBQuery">
+        <properties>
+            <property name="exclude" type="array">
+                <element value="slow_db_query"/>
+            </property>
+        </properties>
+    </rule>
+
     <!-- Prevent space after not "!" -->
     <rule ref="Generic.Formatting.SpaceAfterNot">
         <properties>
