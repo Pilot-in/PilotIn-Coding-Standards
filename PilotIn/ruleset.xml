@@ -32,6 +32,8 @@
         </properties>
     </rule>
 
+
+
     <!-- Prevent space after not "!" -->
     <rule ref="Generic.Formatting.SpaceAfterNot">
         <properties>
@@ -95,6 +97,9 @@
 
     <!-- Show sniff codes in all reports -->
     <arg value="s"/>
+
+    <!-- Check up to 8 files simultaneously. -->
+	<arg name="parallel" value="8"/>
 
     <!-- Excludes folders -->
     <exclude-pattern>*/node_modules/*</exclude-pattern>
