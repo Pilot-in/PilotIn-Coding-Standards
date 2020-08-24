@@ -39,3 +39,21 @@ PHP Coding Standards of Pilot'in
 `phpcs -i` 
 
 *(You should have **"PilotIn"** showing & you're good to go 🚀)*
+
+## Bonus steps 
+
+If you're using **VS Code**:
+
+- Install `phpcs` & `phpcbf` extensions
+- Add this to your vscode settings:
+```jsonc
+/** Validation PHP */
+"php.validate.executablePath": "php.exe",
+"php.validate.run": "onType",
+
+/** Formatte le code selon les standards "PilotIn" */
+"phpcs.standard": "PilotIn",
+"phpcbf.standard": "PilotIn",
+"phpcbf.debug": true,
+"phpcbf.executablePath": "phpcbf.bat",
+```
