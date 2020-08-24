@@ -56,4 +56,9 @@ If you're using **VS Code**:
 "phpcbf.standard": "PilotIn",
 "phpcbf.debug": true,
 "phpcbf.executablePath": "phpcbf.bat",
+
+/** Formattage utilisé pour le PHP */
+"[php]": {
+    "editor.defaultFormatter": "persoderlind.vscode-phpcbf"
+},
 ```
