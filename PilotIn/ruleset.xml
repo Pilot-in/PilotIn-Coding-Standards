@@ -26,6 +26,14 @@
 
     </rule>
 
+    <!-- WordPress Core ruleset -->
+    <rule ref="WordPress-Core">
+
+        <!-- Allow short ternaries -->
+        <exclude name="WordPress.PHP.DisallowShortTernary" />
+
+    </rule>
+
     <!-- Allow Meta & Tax Query -->
     <rule ref="WordPress.DB.SlowDBQuery">
         <properties>
