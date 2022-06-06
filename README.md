@@ -45,7 +45,7 @@ PHP Coding Standards of Pilot'in
 If you're using **VS Code**:
 
 - Install `phpcs` & `phpcbf` extensions
-- Add this to your vscode settings:
+- Add this to your vscode settings json _(Ctrl + Shift + P > Settings json)_:
 ```jsonc
 /** Validation PHP */
 "php.validate.executablePath": "php.exe",
