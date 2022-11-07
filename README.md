@@ -42,7 +42,7 @@ PHP Coding Standards of Pilot'in _(inspired & respecting mostly **[WordPress Cod
 
 ## Bonus steps 
 
-If you're using **VS Code**:
+### VS Code
 
 - Install `phpcs` & `phpcbf` extensions
 - Add this to your vscode settings json _(Ctrl + Shift + P > Settings json)_:
@@ -62,3 +62,22 @@ If you're using **VS Code**:
     "editor.defaultFormatter": "persoderlind.vscode-phpcbf"
 },
 ```
+
+### PhpStorm
+
+- Go to `Files > Settings > PHP > Quality Tools`
+
+![phpcs_1](https://user-images.githubusercontent.com/62112058/200289572-f2e799e4-e205-4472-91a1-5bd5f2af6ff6.png)
+
+
+- Select your files
+
+![image](https://user-images.githubusercontent.com/62112058/200289657-f6a0d910-fd10-407c-8d1a-6c8459340aa6.png)
+
+- Then go to `Editor > Inspections > PHP > Quality tools > PHP_CodeSniffer validation` and select **PilotIn** in `Coding standard` option. You can also choose what type of warning it'll trigger
+
+![phpcs_2](https://user-images.githubusercontent.com/62112058/200290692-5de225ff-8696-40b1-add8-6c2963739507.png)
+
+
+
+
