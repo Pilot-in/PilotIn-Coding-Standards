@@ -42,24 +42,20 @@ PHP Coding Standards of Pilot'in _(inspired & respecting mostly **[WordPress Cod
 
 ### VS Code
 
-- Install `phpcs` & `phpcbf` extensions
+- Install `wongjn.php-sniffer` extension ([VS Marketplace](https://marketplace.visualstudio.com/items?itemName=wongjn.php-sniffer))
 - Add this to your vscode settings json _(Ctrl + Shift + P > Settings json)_:
 ```jsonc
-/** Validation PHP */
-"php.validate.executablePath": "php.exe",
+"php.validate.executablePath": "C:/Full/Path/To/php.exe",
 "php.validate.run": "onType",
-
-/** Formatte le code selon les standards "PilotIn" */
-"phpcs.standard": "PilotIn",
-"phpcbf.standard": "PilotIn",
-"phpcbf.debug": true,
-"phpcbf.executablePath": "phpcbf.bat",
-
-/** Formattage utilisé pour le PHP */
 "[php]": {
-    "editor.defaultFormatter": "persoderlind.vscode-phpcbf"
+    "editor.defaultFormatter": "wongjn.php-sniffer"
 },
+"phpSniffer.standard": "PilotIn",
+"phpSniffer.executablesFolder": "C:/Full/Path/To/Composer/vendor/bin",
 ```
+
+Make sure that your paths (both to `php.exe` and to the `phpcs` and `phpcbf` executables) are correct and absolute. Use the full path every time.
+
 
 ### PhpStorm
 
