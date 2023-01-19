@@ -6,6 +6,10 @@
     <!-- Look only for those files extensions (php,js,css...) -->
     <arg name="extensions" value="php"/>
 
+    <!-- Fixes Uncaught PHP_CodeSniffer\Exceptions\RuntimeException: trim() -->
+    <!-- see https://github.com/WordPress/WordPress-Coding-Standards/issues/2035#issuecomment-1325532520 -->
+    <ini name="error_reporting" value="E_ALL &#38; ~E_DEPRECATED" />
+
     <!-- To customize WordPress properties: -->
     <!-- https://github.com/WordPress/WordPress-Coding-Standards/wiki/Customizable-sniff-properties#custom-word-delimiters-in-hook-names -->
 
