@@ -52,6 +52,8 @@ PHP Coding Standards of Pilot'in _(inspired & respecting mostly **[WordPress Cod
 },
 "phpSniffer.standard": "PilotIn",
 "phpSniffer.executablesFolder": "C:/Full/Path/To/Composer/vendor/bin",
+"phpSniffer.run": "onSave",
+"editor.formatOnSave": true,
 ```
 
 Make sure that your paths (both to `php.exe` and to the `phpcs` and `phpcbf` executables) are correct and absolute. Use the full path every time.
